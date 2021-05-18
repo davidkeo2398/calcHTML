@@ -1,0 +1,24 @@
+{
+  "homepage": "https://github.com/davidkeo2398.github.io/calcHTML",
+  "name": "calcHTML",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidkeo2398/calcHTML.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/davidkeo2398/calcHTML/issues"
+  },
+  "dependencies": {
+    "gh-pages": "^3.1.0"
+  }
+}
