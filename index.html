@@ -1,44 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1, user-scalable=0">
-    <title>Document</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="./css/index.css">
     <script src="./js/index.js"></script>
 </head>
+
 <body>
     <div class="screen">
         <div class="container" id="root">
             <input class="inp" type="text" id="opr" />
             <input value="0" class="inp" type="text" id="result" />
-            <button class="number" id="number0">0</button>
-            <button class="number" id="number1">1</button>
-            <button class="number" id="number2">2</button>
-            
-            <button class="number" id="number3">3</button>
-            <button class="number" id="number4">4</button>
-            <button class="number" id="number5">5</button>
-            
-            <button class="number" id="number6">6</button>
-            <button class="number" id="number7">7</button>
-            <button class="number" id="number8">8</button>
-            
-            <button class="number" id="number9">9</button>
-    
-            <button class="operate" id="dot">.</button>
-            <button class="operate" id="plus">+</button>
-            <button class="operate" id="minus">-</button>
-            <button class="operate" id="mul">x</button>
-            <button class="operate" id="divide">/</button>
-            <button class="operate" id="percent">%</button>
-            <button class="operate" id="switch">+/-</button>
-            <button class="operate" id="delete">AC</button>
-            <button class="operate" id="equal">=</button>
-            <button class="sound" id="mute">Mute</button>    
-          </div>
+            <button onclick="handleClick(id);handleSound(id)" class="number" id="number0" value="0">0</button>
+            <button onclick="handleClick(id);handleSound(id)" class="number" id="number1" value="1">1</button>
+            <button onclick="handleClick(id);handleSound(id)" class="number" id="number2" value="2">2</button>
+
+            <button onclick="handleClick(id);handleSound(id)" class="number" id="number3" value="3">3</button>
+            <button onclick="handleClick(id);handleSound(id)" class="number" id="number4" value="4">4</button>
+            <button onclick="handleClick(id);handleSound(id)" class="number" id="number5" value="5">5</button>
+
+            <button onclick="handleClick(id);handleSound(id)" class="number" id="number6" value="6">6</button>
+            <button onclick="handleClick(id);handleSound(id)" class="number" id="number7" value="7">7</button>
+            <button onclick="handleClick(id);handleSound(id)" class="number" id="number8" value="8">8</button>
+
+            <button onclick="handleClick(id);handleSound(id)" class="number" id="number9" value="9">9</button>
+
+            <button onclick="handleClick(id);handleSound(id)" class="operate" id="dot" value=".">.</button>
+            <button onclick="handleClick(id);handleSound(id)" class="operate" id="plus" value="+">+</button>
+            <button onclick="handleClick(id);handleSound(id)" class="operate" id="minus" value="-">-</button>
+            <button onclick="handleClick(id);handleSound(id)" class="operate" id="mul" value="x">x</button>
+            <button onclick="handleClick(id);handleSound(id)" class="operate" id="divide" value="/">/</button>
+            <button onclick="handleClick(id);handleSound(id)" class="operate" id="percent" value="%">%</button>
+            <button onclick="handleSwitch(id)" class="operate" id="switch">+/-</button>
+            <button onclick="handleAC()" class="operate" id="delete">AC</button>
+            <button onclick="handleEqual()" class="operate" id="equal" value="=">=</button>
+            <button onclick="handlePlay()" class="sound" id="mute">Play</button>
+            <audio id="do" src="./assets/sound/do.wav"></audio>
+            <audio id="re" src="./assets/sound/re.wav"></audio>
+            <audio id="mi" src="./assets/sound/mi.wav"></audio>
+            <audio id="fa" src="./assets/sound/fa.wav"></audio>
+            <audio id="sol" src="./assets/sound/sol.wav"></audio>
+            <audio id="la" src="./assets/sound/fa.wav"></audio>
+            <audio id="si" src="./assets/sound/si.wav"></audio>
+            <audio id="do_octave" src="./assets/sound/do-octave.wav"></audio>
+            <audio id="do_stretched" src="./assets/sound/do-stretched.wav"></audio>
+            <audio id="do_stretched_octave" src="./assets/sound/do-stretched-octave.wav"></audio>
+            <audio id="fa_stretched" src="./assets/sound/fa-stretched.wav"></audio>
+            <audio id="la_stretched" src="./assets/sound/la-stretched.wav"></audio>
+            <audio id="mi_stretched" src="./assets/sound/mi-stretched.wav"></audio>
+            <audio id="re_stretched" src="./assets/sound/re-stretched.wav"></audio>
+            <audio id="si_stretched" src="./assets/sound/si-stretched.wav"></audio>
+            <audio id="sol_stretched" src="./assets/sound/sol-stretched.wav"></audio>
+        </div>
     </div>
 
 </body>
+
 </html>
