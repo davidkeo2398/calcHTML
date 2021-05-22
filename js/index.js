@@ -225,7 +225,7 @@ handlePlay = () => {
     console.log(song);
     song.map((item, i) => {
         console.log(song);
-        setTimeout(() => { item.play(); }, i * 1000)
+        setTimeout(() => { item.play(); }, i * 300)
     })
     song = [];
     value = '';
